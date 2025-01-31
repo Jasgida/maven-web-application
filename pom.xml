@@ -16,6 +16,22 @@
 		<name>Landmark Technologies</name>
 		<url>http://landmarktechnologies.com/</url>
 	</organization>
+        <repositories>
+           <repository>
+                <id>central</id>
+                <url>https://repo.maven.apache.org/maven2</url>
+                <releases>
+                    <enabled>true</enabled>
+                </releases>
+                <snapshots>
+                    <enabled>false</enabled>
+                 </snapshots>
+             </repository>
+         </repositories>
+
+<dependencies>
+    <!-- Your dependencies go here -->
+</dependencies>
 
         <properties>
                 <jdk.version>17</jdk.version>
@@ -41,7 +57,7 @@
 		<dependency>
                         <groupId>org.junit.jupiter</groupId>
                         <artifactId>junit-jupiter-api</artifactId>
-                        <version>${junit.version}</version>
+                        <version>$5.9.2</version>
                         <scope>test</scope>
                 </dependency>
 
