@@ -98,7 +98,12 @@
         <name>Landmark Technologies Releases Nexus Repository</name>
         <url>http://98.81.159.237:8081/repository/tesla-releases/</url>
       </repository>
-
+	  
+      <repository>
+          <id>sonarsource-releases</id>
+          <url>https://repo.sonarsource.com/repository/public/</url>
+      </repository>
+	  
       <snapshotRepository>
         <id>nexus</id>
         <name>Landmark Technologies Snapshot Nexus Repository </name>
@@ -124,14 +129,7 @@
 		        <plugin>
                             <groupId>org.sonarsource.scanner.maven</groupId>
                             <artifactId>sonar-maven-plugin</artifactId>
-                            <version>4.3.1.3277</version>
-                            <executions>
-                                <execution>
-                                    <goals>
-                                        <goal>sonar</goal>
-                                    </goals>
-                               </execution>
-                            </executions>
+                            <version>3.9.1.2184</version>
                         </plugin>
         
 			<plugin>
