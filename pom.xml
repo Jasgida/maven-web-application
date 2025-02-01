@@ -99,11 +99,6 @@
         <url>http://98.81.159.237:8081/repository/tesla-releases/</url>
       </repository>
 	  
-      <repository>
-          <id>sonarsource-releases</id>
-          <url>https://repo.sonarsource.com/repository/public/</url>
-      </repository>
-	  
       <snapshotRepository>
         <id>nexus</id>
         <name>Landmark Technologies Snapshot Nexus Repository </name>
