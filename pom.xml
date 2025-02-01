@@ -94,14 +94,12 @@
 
   <distributionManagement>
       <repository>
-        <id>nexus</id>
-        <name>Landmark Technologies Releases Nexus Repository</name>
+        <id>nexus-releases</id>
         <url>http://18.216.80.193:8081/repository/tesla-wp-release/</url>
       </repository>
 	  
       <snapshotRepository>
-        <id>nexus</id>
-        <name>Landmark Technologies Snapshot Nexus Repository </name>
+        <id>nexus-snapshot</id>
         <url>http://18.216.80.193:8081/repository/tesla-wp-snapshot/</url>
       </snapshotRepository>
       
