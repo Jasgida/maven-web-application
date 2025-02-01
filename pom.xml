@@ -16,18 +16,6 @@
 		<name>Landmark Technologies</name>
 		<url>http://landmarktechnologies.com/</url>
 	</organization>
-        <repositories>
-           <repository>
-                <id>central</id>
-                <url>https://repo.maven.apache.org/maven2</url>
-                <releases>
-                    <enabled>true</enabled>
-                </releases>
-                <snapshots>
-                    <enabled>false</enabled>
-                 </snapshots>
-             </repository>
-         </repositories>
 
 <dependencies>
     <!-- Your dependencies go here -->
