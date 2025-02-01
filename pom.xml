@@ -17,21 +17,19 @@
 		<url>http://landmarktechnologies.com/</url>
 	</organization>
 
-<dependencies>
-    <!-- Your dependencies go here -->
-</dependencies>
-
         <properties>
-                <jdk.version>17</jdk.version>
+                <jdk.version>11</jdk.version>
                 <spring.version>5.1.2.RELEASE</spring.version>
                 <junit.version>4.11</junit.version>
                 <log4j.version>1.2.17</log4j.version>
-                <sonar.host.url>http://18.220.127.93:9000/</sonar.host.url>
+                <sonar.host.url>http://10.0.5.201:9000/</sonar.host.url>
                 <sonar.login>admin</sonar.login>
-                <sonar.password>admin</sonar.password>
+                <sonar.password>admin123</sonar.password>
                 <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
                 <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         </properties>
+
+	<dependencies>
 		
 		<dependency>
 			<groupId>org.json</groupId>
@@ -41,11 +39,11 @@
 		
 		<!-- test dependencies -->
 		<dependency>
-                        <groupId>org.junit.jupiter</groupId>
-                        <artifactId>junit-jupiter-api</artifactId>
-                        <version>5.9.2</version>
-                        <scope>test</scope>
-                </dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
 
 		<dependency>
 			<groupId>javax.servlet</groupId>
@@ -122,7 +120,7 @@
 					<target>${jdk.version}</target>
 				</configuration>
 			</plugin>
-			
+
 			<plugin>
 				<groupId>org.eclipse.jetty</groupId>
 				<artifactId>jetty-maven-plugin</artifactId>
@@ -146,14 +144,6 @@
 					<wtpContextName>maven-web-application</wtpContextName>
 				</configuration>
 			</plugin>
-
-                        <plugin>
-                                <groupId>org.sonarsource.scanner.maven</groupId>
-                                <artifactId>sonar-maven-plugin</artifactId>
-                                <version>4.3.1.3277</version>  <!-- Latest version -->
-                         </plugin>
-
-			
 			
 </plugins>
 	</build>
